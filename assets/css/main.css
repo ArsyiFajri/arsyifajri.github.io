@@ -807,6 +807,531 @@ section,
   align-items: center;
 }
 
+/*--------------------------------------------------------------
+# Portfolio Details: Background & Problem Statement separator
+/*--------------------------------------------------------------*/
+.portofolio-columns {
+  display: flex;
+  gap: 24px;
+  align-items: stretch;
+  margin-top: 12px;
+}
+
+.portofolio-columns .portofolio-background,
+.portofolio-columns .portofolio-problemStatement {
+  padding: 24px 0;
+  flex: 1;
+}
+
+.portofolio-columns .portofolio-background {
+  border-right: 4px solid #C88519; /* vertical separator */
+  padding-right: 24px;
+}
+
+.portofolio-columns .portofolio-problemStatement {
+  padding-left: 24px;
+}
+
+.portofolio-columns .portofolio-background h2,
+.portofolio-columns .portofolio-problemStatement h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.portofolio-columns .portofolio-background p,
+.portofolio-columns .portofolio-problemStatement p,
+.portofolio-columns .portofolio-problemStatement ol {
+  margin-top: 20px; /* gap between heading and paragraph */
+  margin-bottom: 0;
+  font-size: 12px;
+}
+
+.portofolio-columns .portofolio-problemStatement ol li {
+  margin-bottom: 16px;
+}
+
+/*--------------------------------------------------------------
+# Portfolio Details: Research, Persona, User Flow Frames
+/*--------------------------------------------------------------*/
+.Research {
+  padding: 20px 0;
+}
+
+.research-frame {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.research-frame .research-text {
+  flex: 1 1 320px;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.research-frame .research-text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.75;
+  max-width: 520px;
+}
+
+.research-image-wrapper {
+  flex: 0 0 768px;
+  max-width: 100%;
+  position: relative;
+}
+
+.Research h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.research-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 768 / 418;
+  min-height: 0;
+  overflow: visible;
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+  background: transparent;
+}
+
+.research-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border-radius: 24px;
+}
+
+.Persona h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.sitemap-frame {
+  width: 600px;
+  height: 400px;
+  max-width: 100%;
+  margin: 24px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.sitemap-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.persona-frame {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+  margin-top: 24px;
+  flex-wrap: wrap;
+}
+
+.persona-frame .persona-text {
+  flex: 1 1 320px;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.persona-frame .persona-text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.75;
+  max-width: 520px;
+}
+
+.persona-image-wrapper {
+  flex: 0 0 768px;
+  max-width: 100%;
+  position: relative;
+}
+
+.persona-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 768 / 418;
+  min-height: 0;
+  overflow: visible;
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+  background: transparent;
+}
+
+.persona-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border-radius: 24px;
+}
+
+.UserFlow h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.UserFlow-app2 h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.userflow-app2-images {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.userflow-app2-frame {
+  flex: 0 0 345px;
+  width: 345px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.userflow-app2-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.userflow-images {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 24px;
+  margin-top: 24px;
+  flex-wrap: nowrap;
+}
+
+.userflow-image-wrapper {
+  flex: 0 0 670px;
+  max-width: 100%;
+  position: relative;
+}
+
+.userflow-image {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 670 / 400;
+  min-height: 0;
+  overflow: visible;
+  border-radius: 0;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
+  background: transparent;
+}
+
+.userflow-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+  border-radius: 0;
+}
+
+.wireframe h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.wireframe-frame {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 16px;
+  border-radius: 16px;
+}
+
+.wireframe-frame img {
+  width: 1018px;
+  height: 471px;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.high-fidelity {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.high-fidelity h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.high-fidelity-frame {
+  width: 1018px;
+  max-width: 100%;
+  height: 471px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.high-fidelity-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.high-fidelity-app2 {
+  margin-top: 32px;
+}
+
+.high-fidelity-app2 h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.high-fidelity-app2-frames {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+}
+
+.high-fidelity-app2-item {
+  flex: 0 0 600px;
+  width: 600px;
+}
+
+.high-fidelity-app2-frame {
+  width: 600px;
+  height: 372px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.high-fidelity-app2-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.high-fidelity-app2-item h5 {
+  margin: 12px 0 0;
+  text-align: center;
+}
+
+.DesignSystem h2,
+.DesignSystem h3 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.designsystem-columns {
+  display: flex;
+  gap: 32px;
+  margin-top: 32px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.designsystem-typography,
+.designsystem-color {
+  flex: 1 1 calc(50% - 16px);
+  min-width: 320px;
+}
+
+.designsystem-typography h3,
+.designsystem-color h3 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.typography-frames,
+.color-frames {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.typography-frame {
+  width: 665px;
+  max-width: 100%;
+  height: 185px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.typography-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.color-frame {
+  width: 495px;
+  max-width: 100%;
+  overflow: hidden;
+  background: transparent;
+}
+
+.color-frame-theme {
+  height: 145px;
+}
+
+.color-frame-palette {
+  height: 255px;
+}
+
+.color-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.designsystem-grid {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.designsystem-grid h3 {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.grid-frame {
+  width: 565px;
+  max-width: 100%;
+  height: 240px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.grid-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.designsystem-UIComp {
+  margin-top: 32px;
+}
+
+.designsystem-UIComp h3 {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.uicomp-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.uicomp-frame {
+  width: 300px;
+  height: 380px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.uicomp-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+@media (max-width: 920px) {
+  .research-image-wrapper {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .portofolio-columns {
+    flex-direction: column;
+  }
+  .portofolio-columns .portofolio-background {
+    border-right: none;
+    border-bottom: 4px solid #C88519;
+    padding-right: 0;
+    padding-bottom: 16px;
+  }
+  .portofolio-columns .portofolio-problemStatement {
+    padding-left: 0;
+    padding-top: 16px;
+  }
+
+  .research-frame {
+    flex-direction: column;
+  }
+  .research-image {
+    aspect-ratio: auto;
+    height: auto;
+  }
+  .research-image img {
+    aspect-ratio: 768 / 418;
+  }
+  .research-image-label {
+    left: 16px;
+    top: auto;
+    bottom: -48px;
+    transform: translateY(0) rotate(0deg);
+  }
+}
+
+
 .about .content ul strong {
   margin-right: 10px;
 }
@@ -1457,6 +1982,105 @@ section,
 .portfolio-details .portfolio-description p {
   padding: 0;
   color: color-mix(in srgb, var(--default-color), transparent 30%);
+}
+
+.portfolio-details .app2-redesign-layout {
+  display: flex;
+  align-items: flex-start;
+  gap: 46px;
+  width: 100%;
+}
+
+.portfolio-details .app2-redesign-image-frame {
+  flex: 0 0 338px;
+  width: 338px;
+  height: 608px;
+}
+
+.portfolio-details .app2-redesign-image-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.portfolio-details .app2-design-planning-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: left center;
+}
+
+.portfolio-details .app2-redesign-content {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.portfolio-details .app2-redesign-block h4 {
+  margin: 18px 0 14px;
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.portfolio-details .app2-redesign-block:first-child h4 {
+  margin-top: 18px;
+}
+
+.portfolio-details .app2-redesign-block p {
+  margin: 0;
+  color: var(--default-color);
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.portfolio-details .app2-design-planning {
+  margin-top: 18px;
+}
+
+.portfolio-details .app2-design-planning h4 {
+  margin-top: 0;
+}
+
+.portfolio-details .app2-design-planning-frame {
+  width: 802px;
+  height: 305px;
+  max-width: 100%;
+}
+
+@media (max-width: 991px) {
+  .portfolio-details .app2-redesign-layout {
+    gap: 30px;
+  }
+
+  .portfolio-details .app2-redesign-image-frame {
+    flex-basis: min(338px, 35vw);
+    width: min(338px, 35vw);
+    height: auto;
+    aspect-ratio: 338 / 608;
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-details .app2-redesign-layout {
+    display: block;
+  }
+
+  .portfolio-details .app2-redesign-image-frame {
+    width: min(338px, 100%);
+    margin: 0 auto 30px;
+  }
+
+  .portfolio-details .app2-redesign-block p {
+    font-size: 14px;
+  }
+
+  .portfolio-details .app2-design-planning-frame {
+    height: auto;
+    aspect-ratio: 802 / 305;
+  }
 }
 
 /*--------------------------------------------------------------
