@@ -988,6 +988,57 @@ section,
   border-radius: 24px;
 }
 
+.infoStructure {
+  padding: 20px 0;
+}
+
+.infoStructure h2 {
+  text-align: center;
+  width: 100%;
+}
+
+.info-structure-frame {
+  display: flex;
+  align-items: stretch;
+  gap: 24px;
+  margin: 24px 0 40px;
+  flex-wrap: wrap;
+}
+
+.info-structure-image {
+  flex: 0 1 662px;
+  width: 662px;
+  max-width: 100%;
+  height: 448px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-structure-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
+
+.info-structure-text {
+  flex: 1 1 320px;
+  min-width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+.info-structure-text p {
+  max-width: 520px;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
 .UserFlow h2 {
   text-align: center;
   width: 100%;
@@ -1032,12 +1083,13 @@ section,
   justify-content: center;
   gap: 24px;
   margin-top: 24px;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .userflow-image-wrapper {
-  flex: 0 0 670px;
-  max-width: 100%;
+  flex: 1 1 320px;
+  max-width: 670px;
+  min-width: 280px;
   position: relative;
 }
 
@@ -1046,7 +1098,7 @@ section,
   width: 100%;
   aspect-ratio: 670 / 400;
   min-height: 0;
-  overflow: visible;
+  overflow: hidden;
   border-radius: 0;
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.1);
   background: transparent;
@@ -1066,6 +1118,11 @@ section,
   width: 100%;
 }
 
+.wireframe h6 {
+  text-align: center;
+  width: 100%;
+}
+
 .wireframe-frame {
   display: flex;
   justify-content: center;
@@ -1073,6 +1130,15 @@ section,
   background: rgba(255, 255, 255, 0.15);
   padding: 16px;
   border-radius: 16px;
+}
+
+.wireframe-app4 .wireframe-frame {
+  background: #FFBA27;
+  padding: 16px 32px;
+}
+
+.wireframe-app4 .wireframe-frame + h6 {
+  margin-top: 12px;
 }
 
 .wireframe-frame img {
@@ -1207,6 +1273,50 @@ section,
   display: block;
 }
 
+.designsystem-typography-frames-app4 {
+  width: 665px;
+  max-width: 100%;
+  height: 518px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.typography-frame-app4 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.typography-frame-app4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.designsystem-color-frame-app4 {
+  width: 665px;
+  max-width: 100%;
+  height: 518px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.color-frame-app4 {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.color-frame-app4 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
 .color-frame {
   width: 495px;
   max-width: 100%;
@@ -1223,6 +1333,49 @@ section,
 }
 
 .color-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  display: block;
+}
+
+.designsystem-grid-button-app4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  margin-top: 32px;
+}
+
+.designsystem-grid-app4,
+.designsystem-UIcomp-app4 {
+  flex: 1 1 0;
+  min-width: 300px;
+  max-width: 633px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.designsystem-grid-app4 h3,
+.designsystem-UIcomp-app4 h3 {
+  text-align: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.grid-frame-app4,
+.uicomp-frame-app4 {
+  width: 633px;
+  max-width: 100%;
+  height: 612px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.grid-frame-app4 img,
+.uicomp-frame-app4 img {
   width: 100%;
   height: 100%;
   object-fit: contain;
@@ -1295,6 +1448,16 @@ section,
 @media (max-width: 920px) {
   .research-image-wrapper {
     flex: 1 1 100%;
+  }
+
+  .userflow-images {
+    gap: 18px;
+  }
+
+  .userflow-image-wrapper {
+    flex-basis: 100%;
+    max-width: 100%;
+    min-width: 0;
   }
 }
 
